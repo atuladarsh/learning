@@ -8,12 +8,13 @@ on:
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: 🧾 Checkout Repository
         uses: actions/checkout@v3
 
       - name: 📂 FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ftpupload.net
           username: icei_39523469
