@@ -1,0 +1,10 @@
+# Ignore markdown/readme/docs files
+README.md
+*.md
+
+# Ignore Git-related files and folders
+.git*
+.github/
+
+# Ignore deployment files
+.ftpignore
