@@ -23,6 +23,11 @@
             </nav>
         <!-- Navbar End -->
         <div class="container-fluid mt-3">
+            <style>
+                form{
+                    text-align: center;
+                }
+            </style>
             <!-- form start -->
                 <h4>My form</h4><br>
                 <form>
@@ -36,15 +41,19 @@
                 </form>
             <!-- form end -->
         </div>
-        <script>
-            function submitForm(){
-            var fname=document.getElementById('fname').value;
-            var mname=document.getElementById('mname').value;
-            var lname=document.getElementById('lname').value;
-            alert("First name: " + fname);
-            alert("Middle name: " + mname);
-            alert("Last name: " + lname);
-            }
-        </script>
+            <!-- java script to call the value from the form and do alert pop-up on same page -->
+                <script>
+                    function submitForm(){
+                    var fname=document.getElementById('fname').value.trim();
+                    var mname=document.getElementById('mname').value.trim();
+                    var lname=document.getElementById('lname').value.trim();
+                     //java if-else function used to make alert only if data is preset//
+                    if (fname&&mname&&lname){
+                    alert("First name: " + fname);
+                    alert("Middle name: " + mname);
+                    alert("Last name: " + lname);
+                    } else{}
+                }
+                </script>
     </body>
 </html>
