@@ -5,15 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Learning</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="/style.css" rel="stylesheet">
     </head>
     <body>
         <!-- Navbar start-->
             <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
                 <div class="container-fluid">
-                    <div class="container">  
-                        <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">LEARNING</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav navbar-dark">
                             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -22,21 +25,23 @@
                 </div>   
             </nav>
         <!-- Navbar End -->
-        <div class="container-fluid mt-3 text-lg-center">
+        <div class="container-fluid mt-3">
             <!-- <style> -->
 
             <!-- </style> -->
             <!-- form start -->
-                <h4>My form</h4><br>
-                <form>
-                    <label for="fname">First name:</label>
-                    <input type="text" value="" id="fname" name="fname">
-                    <label for="mname">Middle name:</label>
-                    <input type="text" id="mname" name="mname">
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br><br>
-                    <button type="button" class="btn btn-primary" onclick="submitForm()">Submit Button</button>
-                </form>
+                <div class="col-3 text-start">
+                    <h4>My form</h4><br>
+                    <form>
+                        <label for="fname" class="form-label">First Name:</label>
+                        <input type="text" class="form-control mb-2" id="fname" name="fname">
+                        <label for="mname" class="form-label">Middle Name:</label>
+                        <input type="text" class="form-control mb-2" id="mname" name="mname">
+                        <label for="lname" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control mb-2" id="lname" name="lname"><br>
+                        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit Button</button>
+                    </form>                
+                </div>
             <!-- form end -->
         </div>
             <!-- java script to call the value from the form and do alert pop-up on same page -->
@@ -50,20 +55,61 @@
                     alert("First name: " + fname);
                     alert("Middle name: " + mname);
                     alert("Last name: " + lname);
-                        } else{}
+                        }
                     }
                 </script>
             <!-- java script end --><br>
-        <div class="container-fluid">
+        <section class="container-fluid bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4"><strong>column 1</strong></div>
+                    <div class="col-12 text-center py-4"> 
+                        <h1 id="head-text">This is heading</h1>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col bg-light py-3">
+                            <div>
+                                <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="image1" alt="cross" width="100px" height="100px"/>
+                                <h3> this is a image</h3>
+                                <p>this is the image used as an example</p>
+                            </div>
+                        </div>
 
-                    <div class="col-lg-4"><strong>column 2</strong></div>
+                        <div class="col bg-primary py-3">
+                            <div>
+                                <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="image2" alt="cross" width="100px" height="100px"/>
+                                <h3> this is a image</h3>
+                                <p>this is the image used as an example</p>
+                            </div>
+                        </div>
 
-                    <div class="col-lg-4"><strong>column 3</strong></div>
+                        <div class="col bg-light py-3">
+                            <div>
+                                <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="image3" alt="cross" width="100px" height="100px"/>
+                                <h3> this is a image</h3>
+                                <p>this is the image used as an example</p>
+                            </div>
+                        </div>
+
+                        <div class="col bg-primary py-3">
+                            <div>
+                                <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="image4" alt="cross" width="100px" height="100px"/>
+                                <h3> this is a image</h3>
+                                <p>this is the image used as an example</p>
+                            </div>
+                        </div>
+
+                        <div class="col bg-light py-3">
+                            <div>
+                                <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="image5" alt="cross" width="100px" height="100px"/>
+                                <h3> this is a image</h3>
+                                <p>this is the image used as an example</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>     
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
     </body>
 </html>
